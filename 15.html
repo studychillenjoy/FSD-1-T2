@@ -42,24 +42,103 @@ line-height: 1.5;
 line-height: 24px;
 
 text-shadow: 2px 2px 5px gray; -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<Style>
-P{width:40%;border:1px solid blue}
-a{text-align:center}
-b{text-align:right}
-c{text-align:left}
-d{text-align:justify}
-</style>
+  <meta charset="UTF-8">
+  <title>CSS Text Manipulation Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
 
+    .text-box {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 80%;
+    }
 
+    /* 1. Text Alignment */
+    .align-left { text-align: left; }
+    .align-center { text-align: center; }
+    .align-right { text-align: right; }
+    .align-justify { text-align: justify; }
+
+    /* 2. Text Transformation */
+    .uppercase { text-transform: uppercase; }
+    .lowercase { text-transform: lowercase; }
+    .capitalize { text-transform: capitalize; }
+
+    /* 3. Text Decoration */
+    .underline { text-decoration: underline; }
+    .line-through { text-decoration: line-through; }
+    .no-decoration { text-decoration: none; }
+
+    /* 4. Letter and Word Spacing */
+    .letter-spacing { letter-spacing: 3px; }
+    .word-spacing { word-spacing: 10px; }
+
+    /* 5. Line Height */
+    .line-height { line-height: 2; }
+
+    /* 6. White Space Handling */
+    .nowrap { white-space: nowrap; }
+    .pre { white-space: pre; }
+    .normal { white-space: normal; }
+
+    /* 7. Overflow Wrap */
+    .break-word {
+      width: 200px;
+      border: 1px dashed #999;
+      overflow-wrap: break-word;
+    }
+
+    /* 8. Direction and Bidi */
+    .rtl {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+  </style>
+</head>
 <body>
-    <p class ="a">Lo
-    </p>
-    <p class ="b">Lo
-    </p>
-    <p class ="c">Lo
-    </p>
-    <p class ="d">Lo
-    </p>
+
+  <h1>CSS Text Manipulation Examples</h1>
+
+  <div class="text-box align-left">Left aligned text</div>
+  <div class="text-box align-center">Center aligned text</div>
+  <div class="text-box align-right">Right aligned text</div>
+  <div class="text-box align-justify">Justified text stretches across the box evenly, adding space between words.</div>
+
+  <div class="text-box uppercase">this text is uppercase</div>
+  <div class="text-box lowercase">THIS TEXT IS LOWERCASE</div>
+  <div class="text-box capitalize">this text is capitalized</div>
+
+  <div class="text-box underline">Underlined text</div>
+  <div class="text-box line-through">Strikethrough text</div>
+  <div class="text-box no-decoration">No decoration text</div>
+
+  <div class="text-box letter-spacing">Letter spacing example</div>
+  <div class="text-box word-spacing">Word spacing example</div>
+
+  <div class="text-box line-height">
+    This is line one.<br>
+    This is line two.<br>
+    This is line three.
+  </div>
+
+  <div class="text-box nowrap">This text will not wrap even if it overflows the box.</div>
+  <div class="text-box pre">    This text preserves    spaces and line breaks.
+    Like this.
+  </div>
+  <div class="text-box normal">This is normal white space handling.</div>
+
+  <div class="text-box break-word">
+    ThisIsAReallyLongWordThatWouldNormallyOverflowButWillBreakThanksToCSS
+  </div>
+
+  <div class="text-box rtl">مرحبا بك في عالم CSS</div>
+
 </body>
 </html>
