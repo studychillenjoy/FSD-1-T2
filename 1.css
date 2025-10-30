@@ -1,0 +1,30 @@
+/* [ To comment : ctrl+/ ] */
+/* Inline CSS Syntax 
+   <element style ="property1:value1;property2:value2"> content 
+   </element>*/
+
+/* <style>
+   selector{property1:value1;property2:value2} 
+   <style> */
+
+/* body{background-color:cyan}
+      p{color:#e8ff19}
+      h1{color:rgba(232, 255, 25, 0.982)}*/
+     
+/*h1{color:rgba(232, 255, 25, 0.982)!important}
+    To override any other style and get first priority 
+    then inline priority
+    then external with same property only*/ 
+
+/* Types of Selector
+1)element selector
+2)id selector [Unique,to target any tags]
+3)
+4)Univesal Selector(*)[apply to all content in html]
+5)descendant Selector
+Syntax
+
+
+
+   
+     

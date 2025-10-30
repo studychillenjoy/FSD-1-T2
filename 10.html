@@ -1,0 +1,34 @@
+<!-- Descendant selector  -->
+<head>
+    <style>
+        p span{color:blue}/* Descendant Selector*/
+    </style>
+</head>
+<body>
+    <p>Para1</p>
+    <p>abc<span>Hello</span></p>
+    <p>abc<i><span>Hi</span></p></i</p>
+    <span>Hello</span>
+</body>
+
+
+<!-- Child selector  -->
+<head>
+    <style>
+        p>span{color:blue}
+    </style>
+</head>
+<body>
+    <p>Para1</p>
+    <p>abc<span>Hello</span></p>
+    <p>abc<div><span> Hi </span></div></p></p>
+    <span>Hello</span>
+</body>
+<!-- 
+Summary: Descendant vs Child Selector
+Selector	Matches Elements That Are…	                 Example Match
+p span	    Any <span> inside a <p> (at any depth)	     <p><i><span></span></i></p>
+p > span	Only <span> that are direct children of <p>  <p><span></span></p> 
+
+A B → Descendant: any level deep inside A
+A > B → Child: only direct children of A. -->
